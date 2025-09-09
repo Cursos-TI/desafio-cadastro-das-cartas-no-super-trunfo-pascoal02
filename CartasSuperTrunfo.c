@@ -1,7 +1,7 @@
 #include <stdio.h>
  
   int main (){
- //carta o1
+ //carta 01
     char codigo1[5];
     int populacao1;
     float area1;
@@ -103,17 +103,12 @@
     printf("Densidade Populacional: %.2f\n", densidade2);
     printf("PIB per Capita: %.2f milhoes de reais\n", pibpercapita2);
 
-    // Comparações 
-printf("\nComparação de Cartas:\n");
-printf("População: Carta 1 venceu (%d)\n", populacao1 > populacao2);
-printf("Área: Carta 1 venceu (%d)\n", area1 > area2);
-printf("PIB: Carta 1 venceu (%d)\n", pib1 > pib2);
-printf("Pontos Turísticos: Carta 1 venceu (%d)\n", pontos1 > pontos2);
-printf("Densidade Populacional: Carta 1 venceu (%d)\n", densidade1 < densidade2);
-printf("PIB per Capita: Carta 1 venceu (%d)\n", pibpercapita1 > pibpercapita2);
-printf("Super Poder: Carta 1 venceu (%d)\n", superPoder1 > superPoder2);
-
-
+    
+    if (populacao1 > populacao2){
+        printf("A populaçao 1 é maior\n");
+    } else {
+         printf("a população 2 é maior\n");
+    }
  
 
 
